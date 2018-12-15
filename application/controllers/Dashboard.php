@@ -10,7 +10,7 @@ class Dashboard extends MY_Controller {
     $curl = curl_init();
 
 	curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_URL, "http://pvidal-personality-recognition2.field.hortonworks.com:8011/viewsbydesk");
+    curl_setopt($curl, CURLOPT_URL, "http://nifi-server:8011/viewsbydesk");
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
     $result = curl_exec($curl);
@@ -22,7 +22,7 @@ class Dashboard extends MY_Controller {
     $curl = curl_init();
 
 	curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_URL, "http://pvidal-personality-recognition2.field.hortonworks.com:8013/viewsbydate");
+    curl_setopt($curl, CURLOPT_URL, "http://nifi-server:8013/viewsbydate");
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
     $result = curl_exec($curl);
@@ -37,7 +37,7 @@ class Dashboard extends MY_Controller {
 	$curl = curl_init();
 
 	curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_URL, "http://pvidal-personality-recognition2.field.hortonworks.com:8012/dashboard");
+    curl_setopt($curl, CURLOPT_URL, "http://nifi-server:8012/dashboard");
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
     $result = curl_exec($curl);

@@ -19,7 +19,7 @@ class Users extends MY_Controller {
     $curl = curl_init();
 
 	curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_URL, "http://pvidal-personality-recognition2.field.hortonworks.com:8014/articlesearch");
+    curl_setopt($curl, CURLOPT_URL, "http://nifi-server:8014/articlesearch");
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
     $result = curl_exec($curl);
@@ -102,7 +102,7 @@ class Users extends MY_Controller {
 		    $curl = curl_init();
 
 	curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_URL, "http://pvidal-personality-recognition2.field.hortonworks.com:8014/articlesearch");
+    curl_setopt($curl, CURLOPT_URL, "http://nifi-server:8014/articlesearch");
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
     $result = curl_exec($curl);
